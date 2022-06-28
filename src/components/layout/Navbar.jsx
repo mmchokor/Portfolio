@@ -153,7 +153,7 @@ function Navbar({ title }) {
                         about
                      </Link>
                      <a
-                        className='btn btn-primary btn-sm rounded-btn'
+                        className='btn btn-primary btn-sm rounded-btn ml-2'
                         href='https://drive.google.com/file/d/1dpJ9yvPYhm2LfyrQZZ7BGnHf0cNbOcfI/view?usp=sharing'
                         target='_blank'
                      >
