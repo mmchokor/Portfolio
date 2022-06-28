@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import PropTypes from 'prop-types'
+// import file-user icons
+import { FaFilePdf } from 'react-icons/fa'
 
 function Navbar({ title }) {
    const [isNavOpen, setIsNavOpen] = useState(false)
@@ -19,7 +21,7 @@ function Navbar({ title }) {
             <div className='container mx-auto'>
                <div className='flex-none px-2 mx-2'>
                   {/* logo */}
-                  <Link to='/' className='text-lg font-bold align-middle'>
+                  <Link to='/' className='text-2xl font-bold align-middle'>
                      {title}
                   </Link>
                </div>
@@ -85,6 +87,13 @@ function Navbar({ title }) {
                         >
                            ABOUT
                         </Link>
+                        <a
+                           className='btn btn-primary btn-md rounded-btn text-lg'
+                           href='https://drive.google.com/file/d/1dpJ9yvPYhm2LfyrQZZ7BGnHf0cNbOcfI/view?usp=sharing'
+                           target='_blank'
+                        >
+                           <FaFilePdf style={{ paddingRight: '5px' }} /> resume
+                        </a>
                      </ul>
                   </div>
                </section>
@@ -143,6 +152,13 @@ function Navbar({ title }) {
                      >
                         about
                      </Link>
+                     <a
+                        className='btn btn-primary btn-sm rounded-btn'
+                        href='https://drive.google.com/file/d/1dpJ9yvPYhm2LfyrQZZ7BGnHf0cNbOcfI/view?usp=sharing'
+                        target='_blank'
+                     >
+                        <FaFilePdf style={{ paddingRight: '5px' }} /> resume
+                     </a>
                   </div>
                </div>
             </div>
