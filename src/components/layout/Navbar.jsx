@@ -1,11 +1,15 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import PropTypes from 'prop-types'
-// import file-user icons
 import { FaFilePdf } from 'react-icons/fa'
+import useScrollPosition from '../../hooks/useScrollPosition'
 
 function Navbar({ title }) {
    const [isNavOpen, setIsNavOpen] = useState(false)
+   const standardNav =
+      'navbar mb-12 text-neutral-content '
+   const [navbarBg, setNavbarBg] = useState()
+   const standardButton = 'btn btn-ghost btn-sm rounded-btn'
 
    const location = useLocation()
 
@@ -15,9 +19,18 @@ function Navbar({ title }) {
       }
    }
 
+   const scrollPosition = useScrollPosition()
+   useEffect(() => {
+      if (scrollPosition > 35) {
+         setNavbarBg(standardNav + ' sticky top-0 shadow-lg bg-neutral')
+      } else {
+         setNavbarBg(standardNav + ' bg-transparent')
+      }
+   }, [scrollPosition])
+
    return (
       <>
-         <nav className='navbar mb-12 shadow-lg bg-neutral text-neutral-content sticky top-0'>
+         <nav className={navbarBg}>
             <div className='container mx-auto'>
                <div className='flex-none px-2 mx-2'>
                   {/* logo */}
@@ -58,7 +71,7 @@ function Navbar({ title }) {
                            to='/'
                            className={
                               pathMatchRoute('/')
-                                 ? ' scale-150 font-bold'
+                                 ? ' scale-150 font-bold brightness-125'
                                  : ' scale-150'
                            }
                            onClick={() => setIsNavOpen(false)}
@@ -69,7 +82,7 @@ function Navbar({ title }) {
                            to='/contact'
                            className={
                               pathMatchRoute('/contact')
-                                 ? ' scale-150 font-bold'
+                                 ? ' scale-150 font-bold brightness-125'
                                  : ' scale-150'
                            }
                            onClick={() => setIsNavOpen(false)}
@@ -80,7 +93,7 @@ function Navbar({ title }) {
                            to='/about'
                            className={
                               pathMatchRoute('/about')
-                                 ? ' scale-150 font-bold'
+                                 ? ' scale-150 font-bold brightness-125'
                                  : ' scale-150'
                            }
                            onClick={() => setIsNavOpen(false)}
@@ -126,8 +139,8 @@ function Navbar({ title }) {
                         to='/'
                         className={
                            pathMatchRoute('/')
-                              ? 'btn btn-ghost btn-sm rounded-btn font-bold'
-                              : 'btn btn-ghost btn-sm rounded-btn'
+                              ? standardButton + ' font-bold brightness-125'
+                              : standardButton
                         }
                      >
                         Home
@@ -136,8 +149,8 @@ function Navbar({ title }) {
                         to='/contact'
                         className={
                            pathMatchRoute('/contact')
-                              ? 'btn btn-ghost btn-sm rounded-btn font-bold'
-                              : 'btn btn-ghost btn-sm rounded-btn'
+                              ? standardButton + ' font-bold brightness-125'
+                              : standardButton
                         }
                      >
                         Contact
@@ -146,8 +159,8 @@ function Navbar({ title }) {
                         to='/about'
                         className={
                            pathMatchRoute('/about')
-                              ? 'btn btn-ghost btn-sm rounded-btn font-bold'
-                              : 'btn btn-ghost btn-sm rounded-btn'
+                              ? standardButton + ' font-bold brightness-125'
+                              : standardButton
                         }
                      >
                         about
@@ -157,7 +170,7 @@ function Navbar({ title }) {
                         href='https://drive.google.com/file/d/1dpJ9yvPYhm2LfyrQZZ7BGnHf0cNbOcfI/view?usp=sharing'
                         target='_blank'
                      >
-                        <FaFilePdf style={{ paddingRight: '5px' }} /> resume
+                        <FaFilePdf className='pr-1' /> resume
                      </a>
                   </div>
                </div>
