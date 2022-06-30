@@ -5,26 +5,35 @@ import { FaFilePdf } from 'react-icons/fa'
 import useScrollPosition from '../../hooks/useScrollPosition'
 
 function Navbar({ title }) {
-   const [isNavOpen, setIsNavOpen] = useState(false)
-   const standardNav =
-      'navbar mb-12 text-neutral-content '
-   const [navbarBg, setNavbarBg] = useState()
+   // constants of classes
+   const standardNav = 'navbar mb-12 text-neutral-content '
    const standardButton = 'btn btn-ghost btn-sm rounded-btn'
 
-   const location = useLocation()
+   // States
+   const [isNavOpen, setIsNavOpen] = useState(false)
+   const [navbarBg, setNavbarBg] = useState()
 
+   // Hooks
+   const location = useLocation()
+   const scrollPosition = useScrollPosition()
+
+   // a function to ckeck for which route we are on to customize the styling
+   // of certain elemeents in the navbar
    const pathMatchRoute = (route) => {
       if (route === location.pathname) {
          return true
       }
    }
 
-   const scrollPosition = useScrollPosition()
+   // a useEffect to check if the user is scrolling down or up to change the
+   // navbar background using the scroll position hook
    useEffect(() => {
-      if (scrollPosition > 35) {
-         setNavbarBg(standardNav + ' sticky top-0 shadow-lg bg-neutral')
+      if (scrollPosition > 55) {
+         setNavbarBg(
+            standardNav + ' sticky top-0 shadow-lg bg-neutral navbar-toggler'
+         )
       } else {
-         setNavbarBg(standardNav + ' bg-transparent')
+         setNavbarBg(standardNav + ' bg-transparent navbar-toggler')
       }
    }, [scrollPosition])
 
@@ -69,33 +78,40 @@ function Navbar({ title }) {
                      <ul className='MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]'>
                         <Link
                            to='/'
-                           className={
-                              pathMatchRoute('/')
-                                 ? ' scale-150 font-bold brightness-125'
-                                 : ' scale-150'
-                           }
+                           className={`scale-150 ${
+                              pathMatchRoute('/') &&
+                              '  font-bold brightness-125'
+                           }`}
                            onClick={() => setIsNavOpen(false)}
                         >
                            HOME
                         </Link>
                         <Link
+                           to='/projects'
+                           className={`scale-150 ${
+                              pathMatchRoute('/projects') &&
+                              '  font-bold brightness-125'
+                           }`}
+                           onClick={() => setIsNavOpen(false)}
+                        >
+                           PROJECTS
+                        </Link>
+                        <Link
                            to='/contact'
-                           className={
-                              pathMatchRoute('/contact')
-                                 ? ' scale-150 font-bold brightness-125'
-                                 : ' scale-150'
-                           }
+                           className={`scale-150 ${
+                              pathMatchRoute('/contact') &&
+                              '  font-bold brightness-125'
+                           }`}
                            onClick={() => setIsNavOpen(false)}
                         >
                            CONTACT
                         </Link>
                         <Link
                            to='/about'
-                           className={
-                              pathMatchRoute('/about')
-                                 ? ' scale-150 font-bold brightness-125'
-                                 : ' scale-150'
-                           }
+                           className={`scale-150 ${
+                              pathMatchRoute('/about') &&
+                              '  font-bold brightness-125'
+                           }`}
                            onClick={() => setIsNavOpen(false)}
                         >
                            ABOUT
@@ -137,31 +153,35 @@ function Navbar({ title }) {
                   <div className='flex justify-end'>
                      <Link
                         to='/'
-                        className={
-                           pathMatchRoute('/')
-                              ? standardButton + ' font-bold brightness-125'
-                              : standardButton
-                        }
+                        className={`${standardButton} ${
+                           pathMatchRoute('/') && 'font-bold brightness-125'
+                        }`}
                      >
                         Home
                      </Link>
                      <Link
+                        to='/projects'
+                        className={`${standardButton} ${
+                           pathMatchRoute('/projects') && 'font-bold brightness-125'
+                        }`}
+                     >
+                        Projects
+                     </Link>
+                     <Link
                         to='/contact'
-                        className={
-                           pathMatchRoute('/contact')
-                              ? standardButton + ' font-bold brightness-125'
-                              : standardButton
-                        }
+                        className={`${standardButton} ${
+                           pathMatchRoute('/contact') &&
+                           'font-bold brightness-125'
+                        }`}
                      >
                         Contact
                      </Link>
                      <Link
                         to='/about'
-                        className={
-                           pathMatchRoute('/about')
-                              ? standardButton + ' font-bold brightness-125'
-                              : standardButton
-                        }
+                        className={`${standardButton} ${
+                           pathMatchRoute('/about') &&
+                           'font-bold brightness-125'
+                        }`}
                      >
                         about
                      </Link>
