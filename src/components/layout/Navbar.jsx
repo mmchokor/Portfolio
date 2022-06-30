@@ -42,7 +42,6 @@ function Navbar({ title }) {
          <nav className={navbarBg}>
             <div className='container mx-auto'>
                <div className='flex-none px-2 mx-2'>
-                  {/* logo */}
                   <Link to='/' className='text-2xl font-bold align-middle'>
                      {title}
                   </Link>
@@ -75,7 +74,7 @@ function Navbar({ title }) {
                      </div>
 
                      {/* Hamburger menu elements */}
-                     <ul className='MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]'>
+                     <ul className='MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px] space-y-12'>
                         <Link
                            to='/'
                            className={`scale-150 ${
