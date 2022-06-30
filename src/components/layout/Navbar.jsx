@@ -28,7 +28,7 @@ function Navbar({ title }) {
    // a useEffect to check if the user is scrolling down or up to change the
    // navbar background using the scroll position hook
    useEffect(() => {
-      if (scrollPosition > 55) {
+      if (scrollPosition > 40) {
          setNavbarBg(
             standardNav + ' sticky top-0 shadow-lg bg-neutral navbar-toggler'
          )
