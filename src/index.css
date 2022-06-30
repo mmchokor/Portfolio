@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Scrollbar customizations */
+/* width */
+::-webkit-scrollbar {
+   @apply w-3
+}
+/* Track */
+::-webkit-scrollbar-track {
+   @apply bg-transparent;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+   @apply bg-neutral;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   @apply bg-gray-600;
+}
+
 /* animate the nabar to slide down */
 .navbar-toggler {
    -webkit-font-smoothing: antialiased;
