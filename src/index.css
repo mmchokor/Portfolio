@@ -20,6 +20,10 @@
    @apply bg-gray-600;
 }
 
+body {
+   line-height: 1.5rem;
+}
+
 /* animate the nabar to slide down */
 .navbar-toggler {
    -webkit-font-smoothing: antialiased;

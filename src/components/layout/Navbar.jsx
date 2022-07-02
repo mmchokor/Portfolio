@@ -6,7 +6,7 @@ import useScrollPosition from '../../hooks/useScrollPosition'
 
 function Navbar({ title }) {
    // constants of classes
-   const standardNav = 'navbar mb-12 text-neutral-content '
+   const standardNav = 'navbar mb-12 text-neutral-content z-50'
    const standardButton = 'btn btn-ghost btn-sm rounded-btn'
 
    // States
