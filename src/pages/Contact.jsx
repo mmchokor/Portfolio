@@ -6,8 +6,12 @@ function Contact() {
       'https://public.herotofu.com/v1/b0657050-f6ee-11ec-bc36-e1ea9ccadd33'
 
    const [status, setStatus] = useState()
+   const [loading, setLoading] = useState(false)
+
    const handleSubmit = (e) => {
       e.preventDefault()
+
+      setLoading(true)
 
       const injectedData = {
          DYNAMIC_DATA_EXAMPLE: '',
@@ -53,8 +57,18 @@ function Contact() {
 
             return response.json()
          })
-         .then(() => setStatus('Success'))
-         .catch((err) => setStatus(err.toString()))
+         .then(() => {
+            setLoading(false)
+            setStatus('Success')
+         })
+         .catch((err) => {
+            setLoading(false)
+            setStatus(err.toString())
+         })
+   }
+
+   if (loading) {
+      return <div className='loader'></div>
    }
 
    if (status) {
@@ -62,20 +76,23 @@ function Contact() {
          <>
             {status !== 'Success' ? (
                <div className='text-center'>
-                <h1 className='text-5xl font-bold'>
+                  <h1 className='text-5xl font-bold'>
                      Sorry something went wrong!
                   </h1>
                   <br />
-                  <p className='text-2xl'>
-                     The email couldn't be sent
-                  </p>
+                  <p className='text-2xl'>The email couldn't be sent</p>
                   <br />
                   <p>{status}</p>
-                  
+
                   <br />
-                    <button  className='btn btn-error btn-md rounded-btn text-lg w-56' onClick={() => { 
+                  <button
+                     className='btn btn-error btn-md rounded-btn text-lg w-56'
+                     onClick={() => {
                         setStatus()
-                     }}>Try Again</button>
+                     }}
+                  >
+                     Try Again
+                  </button>
                   <br />
                   <br />
                   <Link
@@ -84,11 +101,9 @@ function Contact() {
                   >
                      Home
                   </Link>
-                
-                <br />
-               
+
+                  <br />
                </div>
-               
             ) : (
                <div className='text-center'>
                   <h1 className='text-5xl font-bold'>
@@ -183,7 +198,7 @@ function Contact() {
             text-gray-300
           '
                      rows='3'
-                     placeholder="Type your message"
+                     placeholder='Type your message'
                      required
                   ></textarea>
                </label>

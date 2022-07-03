@@ -48,91 +48,51 @@ body {
 }
 
 /* Spinner CSS */
-/**
-  * Load man - gaming inspired loader
-  *
-  * @author jh3y - jheytompkins.com
-*/
-.load-man {
-   -webkit-animation: load-man-travel 1.2s infinite linear;
-   animation: load-man-travel 1.2s infinite linear;
-   background: repeating-linear-gradient(
-      90deg,
-      var(--secondary),
-      var(--secondary) 5%,
-      transparent 5%,
-      transparent 35%
-   );
-   height: 10px;
-   left: 50%;
-   margin-top: -5px;
-   position: absolute;
-   top: 50%;
-   width: 200px;
-}
-.load-man:after,
-.load-man:before {
+.loader{
+   width: 100px;
+   height: 75px;
+   margin: 10% auto;
+   background: #fff;
+   position: relative;
+   border-radius: 100%;
+ }
+ .loader:before {
    content: '';
    position: absolute;
-   left: -25px;
+   box-sizing: border-box;
+   border: 15px solid transparent;
+   border-top: 25px solid #fff;
+   transform: rotate(45deg);
+   top: 50px;
+   left: -15px;
+ }
+ 
+ .loader:after {
+   content: '';
+   width: 12px;
+   height: 12px;
+   position: absolute;
+   left: 50%;
    top: 50%;
-   border: 25px solid var(--primary);
-   border-radius: 100%;
-   margin-top: -25px;
-}
-.load-man:before {
-   --close: -90;
-   -webkit-animation: load-man-chomp 0.35s infinite linear;
-   animation: load-man-chomp 0.35s infinite linear;
-   border-bottom-color: transparent;
-   border-left-color: transparent;
-}
-.load-man:after {
-   --close: 0;
-   -webkit-animation: load-man-chomp 0.35s infinite linear;
-   animation: load-man-chomp 0.35s infinite linear;
-   border-right-color: transparent;
-   border-top-color: transparent;
-}
-
-@-webkit-keyframes load-man-travel {
-   to {
-      background-position: -200px 0;
-   }
-}
-
-@keyframes load-man-travel {
-   to {
-      background-position: -200px 0;
-   }
-}
-
-@-webkit-keyframes load-man-chomp {
+   transform: translate(-50% , -50%);
+   border-radius: 50%;
+   background-color: rgb(100 116 139);
+   box-shadow: 20px 0 rgb(100 116 139), -20px 0 rgb(100 116 139);
+   animation: flash 0.5s ease-out infinite alternate;
+ }
+ 
+ @keyframes flash {
    0% {
-      -webkit-transform: rotate(-45deg);
-      transform: rotate(-45deg);
+     background-color: rgb(30 41 59);
+     box-shadow: 20px 0 rgb(30 41 59), -20px 0 rgb(100 116 139);
    }
    50% {
-      -webkit-transform: rotate(calc(var(--close) * 1deg));
-      transform: rotate(calc(var(--close) * 1deg));
+     background-color: rgb(100 116 139);
+     box-shadow: 20px 0 rgb(30 41 59), -20px 0 rgb(30 41 59);
    }
    100% {
-      -webkit-transform: rotate(-45deg);
-      transform: rotate(-45deg);
+     background-color: rgb(30 41 59);
+     box-shadow: 20px 0 rgb(100 116 139), -20px 0 rgb(30 41 59);
    }
-}
-
-@keyframes load-man-chomp {
-   0% {
-      -webkit-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-   }
-   50% {
-      -webkit-transform: rotate(calc(var(--close) * 1deg));
-      transform: rotate(calc(var(--close) * 1deg));
-   }
-   100% {
-      -webkit-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-   }
-}
+ }
+       
