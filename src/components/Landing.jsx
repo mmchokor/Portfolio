@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaChevronDown } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 const Landing = () => {
@@ -12,9 +12,13 @@ const Landing = () => {
                   I am a Junior Software/Web Developer
                </h2>
                <div className='inline-flex gap-12 mt-12 pl-5 '>
-               <Link to='/contact' className='btn btn-primary rounded-btn text-xl -m-4 mr-1'>
-                  Hire Me!
-               </Link><span className='text-3xl -mt-3 -mx-4 pr-2'>|</span>
+                  <Link
+                     to='/contact'
+                     className='btn btn-primary rounded-btn text-xl -m-4 mr-1'
+                  >
+                     Hire Me!
+                  </Link>
+                  <span className='text-3xl -mt-3 -mx-4 pr-2'>|</span>
                   <a
                      href='https://github.com/mmchokor'
                      target='_blank'
@@ -30,8 +34,19 @@ const Landing = () => {
                      <FaLinkedin className='fill-current text-neutral-content scale-[250%]  hover:brightness-150' />
                   </a>
                </div>
+               <br />
             </div>
          </section>
+         <div class='flex flex-row justify-center items-center'>
+         <a
+            href='#skills'
+            className='text-center absolute bottom-7 text-md'
+         >
+            Skills
+
+         </a>
+         <p className='text-center absolute bottom-4 text-md'><FaChevronDown/></p>
+         </div>
       </>
    )
 }
