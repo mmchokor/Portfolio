@@ -115,13 +115,13 @@ function Navbar({ title }) {
                         >
                            ABOUT
                         </Link>
-                        <a
+                        <Link
+                           to='/resume'
                            className='btn btn-primary btn-md rounded-btn text-lg'
-                           href='https://drive.google.com/file/d/1dpJ9yvPYhm2LfyrQZZ7BGnHf0cNbOcfI/view?usp=sharing'
-                           target='_blank'
+                           onClick={() => setIsNavOpen(false)}
                         >
-                           <FaFilePdf style={{ paddingRight: '5px' }} /> resume
-                        </a>
+                           <FaFilePdf style={{ paddingRight: '5px' }} /> RESUME
+                        </Link>
                      </ul>
                   </div>
                </section>
@@ -185,13 +185,12 @@ function Navbar({ title }) {
                      >
                         about
                      </Link>
-                     <a
+                     <Link
+                        to='/resume'
                         className='btn btn-primary btn-sm rounded-btn ml-2'
-                        href='https://drive.google.com/file/d/1dpJ9yvPYhm2LfyrQZZ7BGnHf0cNbOcfI/view?usp=sharing'
-                        target='_blank'
                      >
                         <FaFilePdf className='pr-1' /> resume
-                     </a>
+                     </Link>
                   </div>
                </div>
             </div>
