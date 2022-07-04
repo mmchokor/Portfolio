@@ -66,7 +66,7 @@ function Home() {
 
          {/* Skills Section */}
          <section id='skills' className='scroll-mt-24 mt-16'>
-            <h1 className='text-center text-4xl text-white font-bold my-10 bg-gray-800 border-gray-700 py-6 rounded-lg'>
+            <h1 className='text-center text-4xl text-white font-bold my-10 bg-slate-900 border-gray-700 py-6 rounded-lg'>
                My Skills
             </h1>
             <div className='grid gap-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mx-auto'>

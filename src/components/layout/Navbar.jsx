@@ -30,7 +30,7 @@ function Navbar({ title }) {
    useEffect(() => {
       if (scrollPosition > 40) {
          setNavbarBg(
-            standardNav + ' sticky top-0 shadow-lg bg-neutral navbar-toggler'
+            standardNav + ' sticky top-0 shadow-lg bg-slate-900 navbar-toggler'
          )
       } else {
          setNavbarBg(standardNav + ' bg-transparent navbar-toggler')
@@ -51,7 +51,7 @@ function Navbar({ title }) {
                <section className='MOBILE-MENU flex lg:hidden'>
                   <div
                      className={
-                        isNavOpen ? 'showMenuNav bg-neutral' : 'hideMenuNav'
+                        isNavOpen ? 'showMenuNav bg-slate-900' : 'hideMenuNav'
                      }
                   >
                      {/* Cross Icon */}

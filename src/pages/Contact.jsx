@@ -128,7 +128,7 @@ function Contact() {
 
    return (
       <div className='w-full md:w-4/5 md:max-w-full mx-auto lg:w-3/5'>
-         <div className='p-9 border border-gray-600 sm:rounded-md bg-neutral'>
+         <div className='p-9 border border-gray-600 sm:rounded-md bg-slate-900'>
             <form action={FORM_ENDPOINT} onSubmit={handleSubmit} method='POST'>
                <label className='block mb-6'>
                   <span className='text-gray-300'>Your name</span>

@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 function Footer() {
    return (
       // add stling to the footer to make it stay ath the bottom of the page
-      <footer className='items-center p-4 bg-neutral text-neutral-content'>
+      <footer className='items-center p-4 bg-slate-900 text-neutral-content'>
          <div className='footer container mx-auto'>
             <div className='items-center grid-flow-col'>
                <p>Copyright © {new Date().getFullYear()} - All right reserved</p>

@@ -11,7 +11,7 @@ function App() {
    return (
       <>
          <Router>
-            <div className='flex flex-col justiy-between min-h-screen'>
+            <div className='flex flex-col justiy-between min-h-screen bg-gray-800'>
                <Navbar title={'Chokor.Protfolio()'} />
                <main className='container mx-auto px-3 pb-12 flex-grow'>
                   <Routes>

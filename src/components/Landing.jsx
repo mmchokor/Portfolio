@@ -6,9 +6,9 @@ const Landing = () => {
       <>
          <section className='container mx-auto px-3 h-[90vh]'>
             <div className='absolute bottom-20 pr-8'>
-               <h1 className='text-6xl'>Hi! I am,</h1>
-               <h1 className='text-6xl'>Mohamed-Hammoud Chokor</h1>
-               <h2 className='text-3xl mt-3'>
+               <h1 className='text-6xl text-gray-400'>Hi! I am,</h1>
+               <h1 className='text-6xl text-gray-400'>Mohamed-Hammoud Chokor</h1>
+               <h2 className='text-3xl mt-3 text-gray-400'>
                   I am a Junior Software/Web Developer
                </h2>
                <div className='inline-flex gap-12 mt-12 pl-5 '>
@@ -18,7 +18,7 @@ const Landing = () => {
                   >
                      Hire Me!
                   </Link>
-                  <span className='text-3xl -mt-3 -mx-4 pr-2'>|</span>
+                  <span className='text-3xl -mt-3 -mx-4 pr-2 text-gray-400'>|</span>
                   <a
                      href='https://github.com/mmchokor'
                      target='_blank'
@@ -37,7 +37,7 @@ const Landing = () => {
                <br />
             </div>
          </section>
-         <div class='flex flex-row justify-center items-center'>
+         <div class='flex flex-row justify-center items-center text-gray-400'>
          <a
             href='#skills'
             className='text-center absolute bottom-7 text-md'
