@@ -6,8 +6,8 @@ import useScrollPosition from '../../hooks/useScrollPosition'
 
 function Navbar({ title }) {
    // constants of classes
-   const standardNav = 'navbar mb-12 text-neutral-content z-50'
-   const standardButton = 'btn btn-ghost btn-sm rounded-btn'
+   const standardNav = 'navbar mb-12 z-50'
+   const standardButton = 'btn btn-ghost btn-sm rounded-btn text-gray-300'
 
    // States
    const [isNavOpen, setIsNavOpen] = useState(false)
@@ -42,7 +42,10 @@ function Navbar({ title }) {
          <nav className={navbarBg}>
             <div className='container mx-auto'>
                <div className='flex-none px-2 mx-2'>
-                  <Link to='/' className='text-2xl font-bold align-middle'>
+                  <Link
+                     to='/'
+                     className='text-2xl font-bold align-middle text-white brightness-125'
+                  >
                      {title}
                   </Link>
                </div>
@@ -56,11 +59,11 @@ function Navbar({ title }) {
                   >
                      {/* Cross Icon */}
                      <div
-                        className='CROSS-ICON absolute top-0 right-0 px-8 py-8'
+                        className='CROSS-ICON absolute top-0 right-0 px-8 py-8 text-white'
                         onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
                      >
                         <svg
-                           className='h-8 w-8 text-gray-600'
+                           className='h-8 w-8 text-white'
                            viewBox='0 0 24 24'
                            fill='none'
                            stroke='currentColor'
@@ -77,9 +80,9 @@ function Navbar({ title }) {
                      <ul className='MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px] space-y-12'>
                         <Link
                            to='/'
-                           className={`scale-150 ${
+                           className={`text-gray-300 scale-150 ${
                               pathMatchRoute('/') &&
-                              '  font-bold brightness-125'
+                              '  font-bold brightness-125  text-white'
                            }`}
                            onClick={() => setIsNavOpen(false)}
                         >
@@ -87,9 +90,9 @@ function Navbar({ title }) {
                         </Link>
                         <Link
                            to='/projects'
-                           className={`scale-150 ${
+                           className={`text-gray-300 scale-150 ${
                               pathMatchRoute('/projects') &&
-                              '  font-bold brightness-125'
+                              '  font-bold brightness-125  text-white'
                            }`}
                            onClick={() => setIsNavOpen(false)}
                         >
@@ -97,9 +100,9 @@ function Navbar({ title }) {
                         </Link>
                         <Link
                            to='/contact'
-                           className={`scale-150 ${
+                           className={`text-gray-300 scale-150 ${
                               pathMatchRoute('/contact') &&
-                              '  font-bold brightness-125'
+                              '  font-bold brightness-125  text-white'
                            }`}
                            onClick={() => setIsNavOpen(false)}
                         >
@@ -107,9 +110,9 @@ function Navbar({ title }) {
                         </Link>
                         <Link
                            to='/about'
-                           className={`scale-150 ${
+                           className={`text-gray-300 scale-150 ${
                               pathMatchRoute('/about') &&
-                              '  font-bold brightness-125'
+                              '  font-bold brightness-125  text-white'
                            }`}
                            onClick={() => setIsNavOpen(false)}
                         >
@@ -128,7 +131,7 @@ function Navbar({ title }) {
 
                {/* Hamburger menu */}
                <div className='flex-1' />
-               <div className='flex-none lg:hidden'>
+               <div className='flex-none lg:hidden text-white'>
                   <button
                      className='btn btn-ghost btn-sm rounded-btn'
                      onClick={() => setIsNavOpen(!isNavOpen)}
@@ -153,7 +156,7 @@ function Navbar({ title }) {
                      <Link
                         to='/'
                         className={`${standardButton} ${
-                           pathMatchRoute('/') && 'font-bold brightness-125'
+                           pathMatchRoute('/') && 'font-bold brightness-125 text-white'
                         }`}
                      >
                         Home
@@ -162,7 +165,7 @@ function Navbar({ title }) {
                         to='/projects'
                         className={`${standardButton} ${
                            pathMatchRoute('/projects') &&
-                           'font-bold brightness-125'
+                           'font-bold brightness-125 text-white'
                         }`}
                      >
                         Projects
@@ -171,7 +174,7 @@ function Navbar({ title }) {
                         to='/contact'
                         className={`${standardButton} ${
                            pathMatchRoute('/contact') &&
-                           'font-bold brightness-125'
+                           'font-bold brightness-125 text-white'
                         }`}
                      >
                         Contact
@@ -180,7 +183,7 @@ function Navbar({ title }) {
                         to='/about'
                         className={`${standardButton} ${
                            pathMatchRoute('/about') &&
-                           'font-bold brightness-125'
+                           'font-bold brightness-125 text-white'
                         }`}
                      >
                         about
