@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 
 export const SkillsCard = ({ icon, title, skillsArray, skillsArrayIcons }) => {
    return (
-      <div className='block p-6 max-w-sm rounded-lg border shadow-md bg-slate-900 border-gray-700 min-h-[20rem]'>
+      <div className='block p-6 max-w-sm rounded-lg border shadow-md bg-gray-900 border-gray-700 min-h-[20rem]'>
          <h5 className='mb-4 text-2xl font-bold tracking-tight text-white inline-flex'>
             <span className='pr-3 mt-1 ml-2'>{icon}</span> {title}
          </h5>

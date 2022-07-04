@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom'
+import aboutImage from '../assets/images/aboutImage.jpg'
 
 function About() {
    return (
       // center the div belwon
       <section>
-         <div className='max-w-3xl py-4 px-8 bg-slate-900 shadow-lg rounded-lg my-20 mx-auto'>
+         <div className='max-w-3xl py-4 px-8 bg-gray-900 shadow-lg rounded-lg my-20 mx-auto'>
             <div className='flex justify-center md:justify-end -mt-16'>
                <img
                   className='w-20 h-20 object-cover rounded-full border-2 border-indigo-500 lg:scale-150 md:scale-125 lg:mr-10 md:mr-7'
-                  src='../src/assets/images/about-image.jpg'
+                  src={aboutImage}
                />
             </div>
             <div className='pt-4 text-gray-400'>
