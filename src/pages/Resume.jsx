@@ -7,6 +7,7 @@ const Resume = () => {
    const [resumeLinkDownload] = useState(
       'https://drive.google.com/uc?export=download&id=1dpJ9yvPYhm2LfyrQZZ7BGnHf0cNbOcfI'
    )
+   const [loading, setLoading] = useState(true)
 
    return (
       <section>
@@ -15,17 +16,21 @@ const Resume = () => {
                href={resumeLinkDownload}
                target='_blank'
                rel='noopener noreferrer'
-               className='row btn btn-primary w-2/3 mx-auto'
+               className='row btn btn-primary w-1/2 mx-auto'
             >
                Download
             </a>
             <br />
+            {loading && <div className='loader'></div>}
             <iframe
                src={resumeLink}
                width='820'
                height='1100'
                allow='autoplay'
                className='shadow-lg rounded-lg max-w-full'
+               onLoad={() => {
+                  setLoading(false)
+               }}
             ></iframe>
          </div>
       </section>
