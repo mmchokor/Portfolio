@@ -13,7 +13,7 @@ function About() {
                />
             </div>
             <div className='pt-4 text-gray-400'>
-               <h2 className='text-white-800 text-3xl font-semibold'>
+               <h2 className='text-gray-300 text-3xl font-semibold'>
                   Software Developer
                </h2>
                <p className='mt-3 text-white-600'>
