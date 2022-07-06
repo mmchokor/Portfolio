@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import PropTypes from 'prop-types'
 import { FaFilePdf } from 'react-icons/fa'
+import PropTypes from 'prop-types'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 import useScrollPosition from '../../hooks/useScrollPosition'
 
 function Navbar({ title }) {
@@ -54,7 +55,7 @@ function Navbar({ title }) {
                <section className='MOBILE-MENU flex lg:hidden'>
                   <div
                      className={
-                        isNavOpen ? 'showMenuNav bg-gray-800' : 'hideMenuNav'
+                        isNavOpen ? 'showMenuNav hamburgermenu-animationIn bg-gray-800' : 'hideMenuNav'
                      }
                   >
                      {/* Cross Icon */}

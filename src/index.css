@@ -41,6 +41,23 @@ body {
    justify-content: space-evenly;
    align-items: center;
 }
+/* animate the hamburger menu opening */
+.hamburgermenu-animationIn {
+   animation-duration: 0.7s;
+   animation-name: slideIn;
+}
+@keyframes slideIn {
+   from {
+      margin-left: 100%;
+      width: 300%;
+   }
+
+   to {
+      margin-left: 0%;
+      width: 100%;
+   }
+}
+
 /* animate the nabar to slide down */
 .navbar-toggler {
    -webkit-font-smoothing: antialiased;
@@ -48,15 +65,15 @@ body {
 }
 
 /* Spinner CSS */
-.loader{
+.loader {
    width: 100px;
    height: 75px;
    margin: 10% auto;
    background: #fff;
    position: relative;
    border-radius: 100%;
- }
- .loader:before {
+}
+.loader:before {
    content: '';
    position: absolute;
    box-sizing: border-box;
@@ -65,34 +82,33 @@ body {
    transform: rotate(45deg);
    top: 50px;
    left: -15px;
- }
- 
- .loader:after {
+}
+
+.loader:after {
    content: '';
    width: 12px;
    height: 12px;
    position: absolute;
    left: 50%;
    top: 50%;
-   transform: translate(-50% , -50%);
+   transform: translate(-50%, -50%);
    border-radius: 50%;
    background-color: rgb(100 116 139);
    box-shadow: 20px 0 rgb(100 116 139), -20px 0 rgb(100 116 139);
    animation: flash 0.5s ease-out infinite alternate;
- }
- 
- @keyframes flash {
+}
+
+@keyframes flash {
    0% {
-     background-color: rgb(30 41 59);
-     box-shadow: 20px 0 rgb(30 41 59), -20px 0 rgb(100 116 139);
+      background-color: rgb(30 41 59);
+      box-shadow: 20px 0 rgb(30 41 59), -20px 0 rgb(100 116 139);
    }
    50% {
-     background-color: rgb(100 116 139);
-     box-shadow: 20px 0 rgb(30 41 59), -20px 0 rgb(30 41 59);
+      background-color: rgb(100 116 139);
+      box-shadow: 20px 0 rgb(30 41 59), -20px 0 rgb(30 41 59);
    }
    100% {
-     background-color: rgb(30 41 59);
-     box-shadow: 20px 0 rgb(100 116 139), -20px 0 rgb(30 41 59);
+      background-color: rgb(30 41 59);
+      box-shadow: 20px 0 rgb(100 116 139), -20px 0 rgb(30 41 59);
    }
- }
-       
+}

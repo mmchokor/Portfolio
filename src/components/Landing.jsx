@@ -37,7 +37,7 @@ const Landing = () => {
                <br />
             </div>
          </section>
-         <div class='flex flex-row justify-center items-center text-gray-300'>
+         <div className='flex flex-row justify-center items-center text-gray-300'>
          <a
             href='#skills'
             className='text-center absolute bottom-7 text-md'
