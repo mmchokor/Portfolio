@@ -6,6 +6,7 @@ import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import Resume from './pages/Resume'
 import './index.css'
+import "animate.css/animate.min.css"
 
 function App() {
    return (

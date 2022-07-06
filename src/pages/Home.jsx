@@ -1,3 +1,4 @@
+// Icons start ********************************************************************
 import { SkillsCard } from '../components/shared/SkillsCard'
 import { FiMonitor, FiServer } from 'react-icons/fi'
 import {
@@ -18,8 +19,16 @@ import {
    DiEclipse,
    DiVisualstudio,
 } from 'react-icons/di'
-import { SiRedux, SiExpress, SiCplusplus, SiKotlin,SiVisualstudiocode } from 'react-icons/si'
+import {
+   SiRedux,
+   SiExpress,
+   SiCplusplus,
+   SiKotlin,
+   SiVisualstudiocode,
+} from 'react-icons/si'
 import { FaLaptopCode, FaHashtag } from 'react-icons/fa'
+// Icons End **********************************************************************
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 import Landing from '../components/Landing'
 
 function Home() {
@@ -66,42 +75,66 @@ function Home() {
 
          {/* Skills Section */}
          <section id='skills' className='scroll-mt-24 mt-16'>
-            <h1 className='text-center text-4xl text-white font-bold my-10 bg-gray-900 border-gray-700 py-6 rounded-lg'>
-               My Skills
-            </h1>
+            <AnimationOnScroll animateOnce={true} animateIn='animate__fadeInUp'>
+               <div className='text-center text-4xl text-white font-bold my-10 bg-gray-900 border border-gray-700 py-6 rounded-lg shadow-md'>
+                  <h1 className=''>
+                     My Skills
+                  </h1>
+               </div>
+            </AnimationOnScroll>
             <div className='grid gap-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mx-auto'>
-               <div className='container mx-auto px-3 pb-12'>
-                  <SkillsCard
-                     title='Front-End'
-                     skillsArray={frontend}
-                     icon={<FiMonitor />}
-                     skillsArrayIcons={frontendIcons}
-                  />
-               </div>
-               <div className='container mx-auto px-3 pb-12'>
-                  <SkillsCard
-                     title='Backend'
-                     skillsArray={backend}
-                     icon={<FiServer />}
-                     skillsArrayIcons={backendIcons}
-                  />
-               </div>
-               <div className='container mx-auto px-3 pb-12'>
-                  <SkillsCard
-                     title='Programing Languages'
-                     skillsArray={pl}
-                     icon={<DiCode className='scale-[200%]' />}
-                     skillsArrayIcons={plIcons}
-                  />
-               </div>
-               <div className='container mx-auto px-3 pb-12'>
-                  <SkillsCard
-                     title='Tools'
-                     skillsArray={tools}
-                     icon={<FaLaptopCode />}
-                     skillsArrayIcons={toolsIcons}
-                  />
-               </div>
+               <AnimationOnScroll
+                  animateOnce={true}
+                  animateIn='animate__fadeInUp'
+               >
+                  <div className='container mx-auto px-3 pb-12'>
+                     <SkillsCard
+                        title='Front-End'
+                        skillsArray={frontend}
+                        icon={<FiMonitor />}
+                        skillsArrayIcons={frontendIcons}
+                     />
+                  </div>
+               </AnimationOnScroll>
+               <AnimationOnScroll
+                  animateOnce={true}
+                  animateIn='animate__fadeInUp'
+               >
+                  <div className='container mx-auto px-3 pb-12'>
+                     <SkillsCard
+                        title='Backend'
+                        skillsArray={backend}
+                        icon={<FiServer />}
+                        skillsArrayIcons={backendIcons}
+                     />
+                  </div>
+               </AnimationOnScroll>
+               <AnimationOnScroll
+                  animateOnce={true}
+                  animateIn='animate__fadeInUp'
+               >
+                  <div className='container mx-auto px-3 pb-12'>
+                     <SkillsCard
+                        title='Programing Languages'
+                        skillsArray={pl}
+                        icon={<DiCode className='scale-[200%]' />}
+                        skillsArrayIcons={plIcons}
+                     />
+                  </div>
+               </AnimationOnScroll>
+               <AnimationOnScroll
+                  animateOnce={true}
+                  animateIn='animate__fadeInUp'
+               >
+                  <div className='container mx-auto px-3 pb-12'>
+                     <SkillsCard
+                        title='Tools'
+                        skillsArray={tools}
+                        icon={<FaLaptopCode />}
+                        skillsArrayIcons={toolsIcons}
+                     />
+                  </div>
+               </AnimationOnScroll>
             </div>
          </section>
       </>
