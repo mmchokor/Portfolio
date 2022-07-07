@@ -2,10 +2,10 @@ import { useState } from 'react'
 
 const Resume = () => {
    const [resumeLink] = useState(
-      'https://drive.google.com/file/d/1dpJ9yvPYhm2LfyrQZZ7BGnHf0cNbOcfI/preview'
+      'https://drive.google.com/file/d/1GZ9gr_qRIv0pDsaK6RNG5S-nrq9L9Ynz/preview'
    )
    const [resumeLinkDownload] = useState(
-      'https://drive.google.com/uc?export=download&id=1dpJ9yvPYhm2LfyrQZZ7BGnHf0cNbOcfI'
+      'https://drive.google.com/uc?export=download&id=1lbX76Xkcdbpf8_45ExZloLGr7f1FWHea'
    )
    const [loading, setLoading] = useState(true)
 

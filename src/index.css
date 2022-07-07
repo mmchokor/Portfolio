@@ -95,7 +95,7 @@ body {
    border-radius: 50%;
    background-color: rgb(100 116 139);
    box-shadow: 20px 0 rgb(100 116 139), -20px 0 rgb(100 116 139);
-   animation: flash 0.5s ease-out infinite alternate;
+   animation: flash 1s ease-out infinite alternate;
 }
 
 @keyframes flash {
