@@ -55,7 +55,9 @@ function Navbar({ title }) {
                <section className='MOBILE-MENU flex lg:hidden'>
                   <div
                      className={
-                        isNavOpen ? 'showMenuNav hamburgermenu-animationIn bg-gray-800' : 'hideMenuNav'
+                        isNavOpen
+                           ? 'showMenuNav hamburgermenu-animationIn bg-gray-800'
+                           : 'hideMenuNav'
                      }
                   >
                      {/* Cross Icon */}
@@ -89,16 +91,24 @@ function Navbar({ title }) {
                         >
                            HOME
                         </Link>
-                        <Link
-                           to='/projects'
-                           className={`text-gray-300 scale-150 ${
-                              pathMatchRoute('/projects') &&
-                              '  font-bold brightness-125  text-white'
-                           }`}
-                           onClick={() => setIsNavOpen(false)}
-                        >
-                           PROJECTS
-                        </Link>
+                        {pathMatchRoute('/') && (
+                           <>
+                              <a
+                                 href='#skills'
+                                 className={'text-gray-300 scale-150'}
+                                 onClick={() => setIsNavOpen(false)}
+                              >
+                                 Skills
+                              </a>
+                              <a
+                                 href='#projects'
+                                 className={'text-gray-300 scale-150'}
+                                 onClick={() => setIsNavOpen(false)}
+                              >
+                                 Projects
+                              </a>
+                           </>
+                        )}
                         <Link
                            to='/contact'
                            className={`text-gray-300 scale-150 ${
@@ -157,20 +167,22 @@ function Navbar({ title }) {
                      <Link
                         to='/'
                         className={`${standardButton} ${
-                           pathMatchRoute('/') && 'font-bold brightness-125 text-white'
+                           pathMatchRoute('/') &&
+                           'font-bold brightness-125 text-white'
                         }`}
                      >
                         Home
                      </Link>
-                     <Link
-                        to='/projects'
-                        className={`${standardButton} ${
-                           pathMatchRoute('/projects') &&
-                           'font-bold brightness-125 text-white'
-                        }`}
-                     >
-                        Projects
-                     </Link>
+                     {pathMatchRoute('/') && (
+                        <>
+                           <a href='#skills' className={standardButton}>
+                              Skills
+                           </a>
+                           <a href='#projects' className={standardButton}>
+                              Projects
+                           </a>
+                        </>
+                     )}
                      <Link
                         to='/contact'
                         className={`${standardButton} ${

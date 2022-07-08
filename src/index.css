@@ -20,6 +20,10 @@
    @apply bg-gray-600;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
    line-height: 1.5rem;
 }

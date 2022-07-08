@@ -24,9 +24,9 @@ const Projects = () => {
       },
    ]
    return (
-      <section>
+      <section id='projects' className='scroll-mt-24 mt-10'>
          <AnimationOnScroll animateOnce={true} animateIn='animate__fadeInUp'>
-            <div className='mt-8 mb-10 text-center text-4xl text-white font-bold bg-gray-900 border border-gray-700 py-6 rounded-lg shadow-md'>
+            <div className='mb-10 text-center text-4xl text-white font-bold bg-gray-900 border border-gray-700 py-6 rounded-lg shadow-md'>
                <h1>My Projects</h1>{' '}
                <span className='text-sm'>(Not all project are added yet)</span>
             </div>
