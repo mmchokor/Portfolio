@@ -87,7 +87,13 @@ function Navbar({ title }) {
                               pathMatchRoute('/') &&
                               '  font-bold brightness-125  text-white'
                            }`}
-                           onClick={() => setIsNavOpen(false)}
+                           onClick={() => {
+                              setIsNavOpen(false)
+                              window.scrollTo({
+                                 top: 0,
+                                 behavior: 'smooth',
+                              })
+                           }}
                         >
                            HOME
                         </Link>
@@ -170,6 +176,12 @@ function Navbar({ title }) {
                            pathMatchRoute('/') &&
                            'font-bold brightness-125 text-white'
                         }`}
+                        onClick={() => {
+                           window.scrollTo({
+                              top: 0,
+                              behavior: 'smooth',
+                           })
+                        }}
                      >
                         Home
                      </Link>
