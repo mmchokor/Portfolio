@@ -1,5 +1,6 @@
 import Landing from '../components/Landing'
 import Skills from '../components/Skills'
+import Projects from '../components/Projects'
 
 function Home() {
    return (
@@ -9,6 +10,9 @@ function Home() {
 
          {/* Skills Section */}
          <Skills />
+
+         {/* Projects Section */}
+         <Projects />
       </>
    )
 }

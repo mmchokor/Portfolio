@@ -1,3 +1,4 @@
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 import HouseMarketplaceImage from '../assets/images/projectsImages/hourse-marketplace.jpg'
 import PortfolioImage from '../assets/images/projectsImages/portfolio.png'
 import ProjectCard from '../components/shared/ProjectCard'
@@ -24,24 +25,31 @@ const Projects = () => {
    ]
    return (
       <section>
-         <div className='-mt-6 mb-10 text-center text-4xl text-white font-bold bg-gray-900 border border-gray-700 py-6 rounded-lg shadow-md'>
-            <h1>My Projects</h1>{' '}
-            <span className='text-sm'>(Not all project are added yet)</span>
-         </div>
+         <AnimationOnScroll animateOnce={true} animateIn='animate__fadeInUp'>
+            <div className='mt-8 mb-10 text-center text-4xl text-white font-bold bg-gray-900 border border-gray-700 py-6 rounded-lg shadow-md'>
+               <h1>My Projects</h1>{' '}
+               <span className='text-sm'>(Not all project are added yet)</span>
+            </div>
+         </AnimationOnScroll>
 
          <div className='grid gap-10 md:grid-cols-2 sm:grid-cols-1 mx-auto'>
             {/* map through the array of objects projects */}
             {projects.map((project, index) => {
                return (
-                  <ProjectCard
-                     title={project.title}
-                     description={project.description}
-                     image={project.image}
-                     technologies={project.technologies}
-                     demoLink={project.demoLink}
-                     githubLink={project.githubLink}
-                     key={index}
-                  />
+                  <AnimationOnScroll
+                     animateOnce={true}
+                     animateIn='animate__fadeInUp'
+                  >
+                     <ProjectCard
+                        title={project.title}
+                        description={project.description}
+                        image={project.image}
+                        technologies={project.technologies}
+                        demoLink={project.demoLink}
+                        githubLink={project.githubLink}
+                        key={index}
+                     />
+                  </AnimationOnScroll>
                )
             })}
          </div>
