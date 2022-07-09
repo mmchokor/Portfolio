@@ -1,6 +1,9 @@
-import { AnimationOnScroll } from 'react-animation-on-scroll'
+// Images ************************************************************************************
 import HouseMarketplaceImage from '../assets/images/projectsImages/hourse-marketplace.jpg'
 import PortfolioImage from '../assets/images/projectsImages/portfolio.png'
+import SupportDesk from '../assets/images/projectsImages/support-desk.jpg'
+// Images ************************************************************************************
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 import ProjectCard from '../components/shared/ProjectCard'
 
 const Projects = () => {
@@ -15,10 +18,19 @@ const Projects = () => {
          githubLink: 'https://github.com/mmchokor/house_marketplace',
       },
       {
-         title: 'Chokor.Portfolio() 22',
+         titile: 'Support Desk',
+         description:
+            'A full stack application that allows users to create tickets and view all tickets that have been created. The user can also view all tickets that have been assigned to him or her and view the tickets that have been resolved.',
+         image: SupportDesk,
+         technologies: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB', 'Vite'],
+         demoLink: 'https://chokor-support-desk.herokuapp.com/login',
+         githubLink: 'https://github.com/mmchokor/support-desk-app',
+      },
+      {
+         title: 'Chokor.Portfolio()',
          description: 'The website you are currently viewing',
          image: PortfolioImage,
-         technologies: ['ReactJS', 'Tailwind Css', 'NodeJS'],
+         technologies: ['ReactJS', 'Tailwind Css', 'NodeJS', 'Vite'],
          demoLink: 'https://mohamed-chokor.netlify.app/',
          githubLink: 'https://github.com/mmchokor/Portfolio',
       },
