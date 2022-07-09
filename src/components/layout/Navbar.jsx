@@ -46,6 +46,12 @@ function Navbar({ title }) {
                   <Link
                      to='/'
                      className='text-2xl font-bold align-middle text-white brightness-125'
+                     onClick={() => {
+                        window.scrollTo({
+                           top: 0,
+                           behavior: 'smooth',
+                        })
+                     }}
                   >
                      {title}
                   </Link>
