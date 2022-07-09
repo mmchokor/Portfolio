@@ -36,20 +36,24 @@ const ProjectCard = ({
                   })}
                </p>
                <div className='p-6 flex flex-row justify-center gap-4 mt-1'>
-                  <a
-                     href={demoLink}
-                     className='btn btn-primary md:btn-md w-1/2 text-xl'
-                     target='_blank'
-                  >
-                     Demo
-                  </a>
-                  <a
-                     href={githubLink}
-                     className='btn btn-secondary md:btn-md w-1/2 text-xl'
-                     target='_blank'
-                  >
-                     Code
-                  </a>
+                  {demoLink && (
+                     <a
+                        href={demoLink}
+                        className='btn btn-primary md:btn-md w-1/2 text-xl'
+                        target='_blank'
+                     >
+                        Demo
+                     </a>
+                  )}
+                  {githubLink && (
+                     <a
+                        href={githubLink}
+                        className='btn btn-secondary md:btn-md w-1/2 text-xl'
+                        target='_blank'
+                     >
+                        Code
+                     </a>
+                  )}
                </div>
             </div>
          </div>
