@@ -5,7 +5,7 @@ const Resume = () => {
       'https://drive.google.com/file/d/1GZ9gr_qRIv0pDsaK6RNG5S-nrq9L9Ynz/preview'
    )
    const [resumeLinkDownload] = useState(
-      'https://drive.google.com/uc?export=download&id=1lbX76Xkcdbpf8_45ExZloLGr7f1FWHea'
+      'https://drive.google.com/uc?export=download&id=1GZ9gr_qRIv0pDsaK6RNG5S-nrq9L9Ynz'
    )
    const [loading, setLoading] = useState(true)
 
