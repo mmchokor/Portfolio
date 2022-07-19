@@ -19,7 +19,7 @@ const Projects = () => {
          githubLink: 'https://github.com/mmchokor/house_marketplace',
       },
       {
-         titile: 'Support Desk',
+         title: 'Support Desk',
          description:
             'A full stack application that allows users to create tickets and view all tickets that have been created. The user can also view all tickets that have been assigned to him or her and view the tickets that have been resolved.',
          image: SupportDesk,
