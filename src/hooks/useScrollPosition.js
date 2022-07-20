@@ -1,3 +1,6 @@
+// Description of the hook:
+// This hook is used to get the scroll position of the page
+
 import { useEffect, useState } from 'react'
 
 const useScrollPosition = () => {

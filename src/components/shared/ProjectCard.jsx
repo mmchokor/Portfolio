@@ -1,3 +1,12 @@
+// Description: This component is used to display a project card
+// Parameters:
+// title: string
+// description: string
+// image: string
+// technologies: array
+// demoLink: string
+// githubLink: string
+
 import Readmore from './Readmore'
 
 const ProjectCard = ({

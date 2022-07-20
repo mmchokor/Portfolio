@@ -1,9 +1,15 @@
+// Description of the component:
+// This component is used to display my resume in a iframe tag
+// It gets my resume from my google drive
+
 import { useState } from 'react'
 
 const Resume = () => {
+   // Link for the iframe to view my resume from my google drive
    const [resumeLink] = useState(
       'https://drive.google.com/file/d/1GZ9gr_qRIv0pDsaK6RNG5S-nrq9L9Ynz/preview'
    )
+   // Link to be used in the a tag to directly download my resume
    const [resumeLinkDownload] = useState(
       'https://drive.google.com/uc?export=download&id=1GZ9gr_qRIv0pDsaK6RNG5S-nrq9L9Ynz'
    )

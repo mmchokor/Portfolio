@@ -1,3 +1,8 @@
+// Description of the component:
+// This component is used to send me an email of all the user inputs
+// It uses the herotofu free service to send the email
+// TODO - Find a way to send the email using something else than herotofu
+
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -8,9 +13,15 @@ function Contact() {
    const [status, setStatus] = useState()
    const [loading, setLoading] = useState(false)
 
+   // Descriotion of the function:
+   // This function is used to send the email
+   // Copied it from the herotofu documentation
+   // It runs when the form is submitted
    const handleSubmit = (e) => {
+      // Prevent the default behavior of the form
       e.preventDefault()
 
+      // Set the loading state to true to return the loading component
       setLoading(true)
 
       const injectedData = {
@@ -27,6 +38,7 @@ function Contact() {
 
       Object.assign(data, injectedData)
 
+      // Send the email using fetch
       fetch(FORM_ENDPOINT, {
          method: 'POST',
          headers: {
@@ -67,10 +79,15 @@ function Contact() {
          })
    }
 
+   // return the loading component when loading is true
    if (loading) {
       return <div className='loader'></div>
    }
 
+   // If something went wrong, return the error message
+   // It lets the user retry or go back to the home page
+   // If everything went well, return a success message
+   // It lets the user go back to the home page
    if (status) {
       return (
          <>
@@ -126,6 +143,7 @@ function Contact() {
       )
    }
 
+   // The form
    return (
       <div className='w-full md:w-4/5 md:max-w-full mx-auto lg:w-3/5'>
          <div className='p-9 border border-gray-600 sm:rounded-md bg-gray-900'>

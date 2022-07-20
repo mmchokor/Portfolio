@@ -1,3 +1,6 @@
+// Description of the component:
+// This component is used to display the landing, skills and Projects component
+
 import Landing from '../components/Landing'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'

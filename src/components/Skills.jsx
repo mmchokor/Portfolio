@@ -1,3 +1,6 @@
+// Description of the component:
+// This component is used to display the skills in the Home page
+
 // Icons start ********************************************************************
 import { FiMonitor, FiServer } from 'react-icons/fi'
 import {
@@ -31,6 +34,8 @@ import { AnimationOnScroll } from 'react-animation-on-scroll'
 import { SkillsCard } from './shared/SkillsCard'
 
 const Skills = () => {
+   // Array of skills objects
+   // Each object has a title, icon, an array of skills, and an array of icons of each skill in the array
    const skills = [
       {
          name: 'Front-End',
@@ -59,7 +64,7 @@ const Skills = () => {
       },
       {
          name: 'Languages',
-         icon: <DiCode className='scale-[200%]'/>,
+         icon: <DiCode className='scale-[200%]' />,
          skills: ['Java', 'Python', 'C/C++', 'C#', 'Kotlin'],
          skillsIcons: [
             <DiJava className='scale-125' />,
@@ -92,16 +97,20 @@ const Skills = () => {
          </AnimationOnScroll>
          <div className='grid gap-1 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mx-auto'>
             {skills.map((skill, index) => (
-                <AnimationOnScroll animateOnce={true} animateIn='animate__fadeInUp'>
-                <div className='container mx-auto px-3 pb-12'>
-                   <SkillsCard
-                      title={skill.name}
-                      skillsArray={skill.skills}
-                      icon={skill.icon}
-                      skillsArrayIcons={skill.skillsIcons}
-                   />
-                </div>
-             </AnimationOnScroll>
+               <AnimationOnScroll
+                  animateOnce={true}
+                  animateIn='animate__fadeInUp'
+                  key={index}
+               >
+                  <div className='container mx-auto px-3 pb-12'>
+                     <SkillsCard
+                        title={skill.name}
+                        skillsArray={skill.skills}
+                        icon={skill.icon}
+                        skillsArrayIcons={skill.skillsIcons}
+                     />
+                  </div>
+               </AnimationOnScroll>
             ))}
          </div>
       </section>

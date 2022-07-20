@@ -15,8 +15,7 @@
     "react-animation-on-scroll": "^5.1.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.4.0",
-    "react-router-dom": "^6.3.0",
-    "react-toastify": "^9.0.5"
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

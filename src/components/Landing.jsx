@@ -1,3 +1,8 @@
+// Descripion of the component:
+// This component is used to introduce my self to the user
+// It has links to my github and linkedin
+// It has a button to hire me with a link to the contact page
+
 import { FaGithub, FaLinkedin, FaChevronDown } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 

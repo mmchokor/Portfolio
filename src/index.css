@@ -21,10 +21,12 @@
 }
 
 html {
+   /* Make the anchor tag scroll smoother */
 	scroll-behavior: smooth;
 }
 
 body {
+   /* Makes all line height 1.5 */
    line-height: 1.5rem;
 }
 

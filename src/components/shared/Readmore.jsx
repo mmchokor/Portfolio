@@ -1,3 +1,9 @@
+// Description of the component:
+// This component is used to set the amount of characters to display of the paragraph
+// If it shorter than the limit it won't display the button
+// Parameters:
+// children: string
+
 import React, { useState } from 'react'
 
 const Readmore = ({ children }) => {

@@ -1,3 +1,6 @@
+// Description of the component:
+// This component is used to display the skills that is passed in fromm the Skills Component
+
 import PropTypes from 'prop-types'
 
 export const SkillsCard = ({ icon, title, skillsArray, skillsArrayIcons }) => {

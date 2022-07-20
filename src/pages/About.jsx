@@ -1,9 +1,13 @@
+// Description of the component:
+// This component is used to display a brief description of me
+// It has a link to the contact page
+// The picture can grow and shrink on hover
+
 import { Link } from 'react-router-dom'
 import aboutImage from '../assets/images/aboutImage.jpg'
 
 function About() {
    return (
-      // center the div belwon
       <section>
          <div className='max-w-3xl py-4 px-8 bg-gray-900 shadow-lg rounded-lg my-20 mx-auto'>
             <div className='flex justify-center md:justify-end -mt-16 hover:scale-150 lg:hover:mr-28 md:hover:mr-32'>

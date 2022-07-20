@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { FaFilePdf } from 'react-icons/fa'
 import PropTypes from 'prop-types'
-import { AnimationOnScroll } from 'react-animation-on-scroll'
 import useScrollPosition from '../../hooks/useScrollPosition'
 
 function Navbar({ title }) {
@@ -152,7 +151,7 @@ function Navbar({ title }) {
                   </div>
                </section>
 
-               {/* Hamburger menu */}
+               {/* Hamburger menu Icon */}
                <div className='flex-1' />
                <div className='flex-none lg:hidden text-white'>
                   <button
@@ -173,7 +172,7 @@ function Navbar({ title }) {
                   </button>
                </div>
 
-               {/* Desktop eleemts */}
+               {/* Desktop navbar elemts */}
                <div className='flex-1 px-2 mx-2 hidden lg:block'>
                   <div className='flex justify-end'>
                      <Link

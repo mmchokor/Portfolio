@@ -1,3 +1,6 @@
+// Descripion of the component
+// This component is used to display the projects tin the Home page
+
 // Images ************************************************************************************
 import HouseMarketplaceImage from '../assets/images/projectsImages/hourse-marketplace.jpg'
 import PortfolioImage from '../assets/images/projectsImages/portfolio.png'
@@ -8,6 +11,8 @@ import { AnimationOnScroll } from 'react-animation-on-scroll'
 import ProjectCard from '../components/shared/ProjectCard'
 
 const Projects = () => {
+   // Array of projects objects
+   // Each object has a title, description, image, and a link to the project live demo or github
    const projects = [
       {
          title: 'House Marketplace',
