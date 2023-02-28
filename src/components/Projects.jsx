@@ -2,10 +2,11 @@
 // This component is used to display the projects tin the Home page
 
 // Images ************************************************************************************
+import FaceAttendance from '../assets/images/projectsImages/face-attendance.jpg'
 import HouseMarketplaceImage from '../assets/images/projectsImages/hourse-marketplace.jpg'
+import PharmacyMS from '../assets/images/projectsImages/pharmacyMS.jpg'
 import PortfolioImage from '../assets/images/projectsImages/portfolio.png'
 import SupportDesk from '../assets/images/projectsImages/support-desk.jpg'
-import FaceAttendance from '../assets/images/projectsImages/face-attendance.jpg'
 // Images ************************************************************************************
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import ProjectCard from '../components/shared/ProjectCard'
@@ -29,7 +30,7 @@ const Projects = () => {
             'A full stack application that allows users to create tickets and view all tickets that have been created. The user can also view all tickets that have been assigned to him or her and view the tickets that have been resolved.',
          image: SupportDesk,
          technologies: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB', 'Vite'],
-         demoLink: 'https://chokor-support-desk.herokuapp.com/login',
+         demoLink: 'https://support-desk-frontend-chokor.vercel.app/',
          githubLink: 'https://github.com/mmchokor/support-desk-app',
       },
       {
@@ -40,6 +41,15 @@ const Projects = () => {
          technologies: ['Python', 'OpenCV', 'face_recognition', 'Numpy'],
          demoLink: '',
          githubLink: 'https://github.com/mmchokor/Face-Attendace-Program',
+      },
+      {
+         title: 'Pharmacy Admin Panel',
+         description:
+            'A website to manage all the data of a pharmacy. It was made using PHP, HTML, CSS, JavaScript, and SQL.',
+         image: PharmacyMS,
+         technologies: ['PHP', 'SQL', 'HTML', 'Bootstrap', 'CSS', 'JavaScript'],
+         demoLink: '',
+         githubLink: 'https://github.com/mmchokor/Pharmacy-Database-Project',
       },
       {
          title: 'Chokor.Portfolio()',
