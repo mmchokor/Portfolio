@@ -2,33 +2,33 @@
 // This component is used to display the skills in the Home page
 
 // Icons start ********************************************************************
-import { FiMonitor, FiServer } from 'react-icons/fi'
 import {
    DiCode,
-   DiReact,
-   DiHtml5,
    DiCss3,
-   DiJavascript,
-   DiNodejsSmall,
-   DiMongodb,
+   DiEclipse,
    DiFirebase,
-   DiPhp,
-   DiMysql,
-   DiJava,
-   DiPython,
    DiGit,
    DiGithub,
-   DiEclipse,
+   DiHtml5,
+   DiJava,
+   DiJavascript,
+   DiMongodb,
+   DiMysql,
+   DiNodejsSmall,
+   DiPhp,
+   DiPython,
+   DiReact,
    DiVisualstudio,
 } from 'react-icons/di'
+import { FaHashtag, FaLaptopCode, FaVuejs } from 'react-icons/fa'
+import { FiMonitor, FiServer } from 'react-icons/fi'
 import {
-   SiRedux,
-   SiExpress,
    SiCplusplus,
+   SiExpress,
    SiKotlin,
+   SiRedux,
    SiVisualstudiocode,
 } from 'react-icons/si'
-import { FaLaptopCode, FaHashtag } from 'react-icons/fa'
 // Icons End **********************************************************************
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import { SkillsCard } from './shared/SkillsCard'
@@ -40,9 +40,10 @@ const Skills = () => {
       {
          name: 'Front-End',
          icon: <FiMonitor />,
-         skills: ['ReactJs', 'HTML5', 'CSS3', 'JavaScript', 'Redux'],
+         skills: ['ReactJs', 'VueJs', 'HTML5', 'CSS3', 'JavaScript', 'Redux'],
          skillsIcons: [
             <DiReact className='scale-125' />,
+            <FaVuejs />,
             <DiHtml5 />,
             <DiCss3 />,
             <DiJavascript />,
