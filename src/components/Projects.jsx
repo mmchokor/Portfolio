@@ -21,7 +21,7 @@ const Projects = () => {
          description:
             'A mobile app designed to connect Lebanese residents with travelers visiting Lebanon, enabling them to request foreign products that are not readily available in the local market.',
          image: BaddeSalemtak,
-         technologies: ['React Native', 'ExpressJS', 'NodeJS', 'MongoDB'],
+         technologies: ['React Native', 'ExpressJS', 'NodeJS', 'MongoDB', 'AWS S3'],
          soonBTN: true,
       },
       {
