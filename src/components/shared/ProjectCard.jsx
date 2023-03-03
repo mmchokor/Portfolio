@@ -32,7 +32,7 @@ const ProjectCard = ({
                <Readmore className='text-base mb-4 text-gray-400'>
                   {description}
                </Readmore>
-               <p>
+               <p className='m-3'>
                   {/* a map to display disabled btn */}
                   {technologies.map((technology, index) => {
                      return (
