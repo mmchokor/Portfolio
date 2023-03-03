@@ -2,6 +2,7 @@
 // This component is used to display the projects tin the Home page
 
 // Images ************************************************************************************
+import BaddeSalemtak from '../assets/images/projectsImages/baddeSalemtak.png'
 import FaceAttendance from '../assets/images/projectsImages/face-attendance.jpg'
 import HouseMarketplaceImage from '../assets/images/projectsImages/hourse-marketplace.jpg'
 import PharmacyMS from '../assets/images/projectsImages/pharmacyMS.jpg'
@@ -15,6 +16,14 @@ const Projects = () => {
    // Array of projects objects
    // Each object has a title, description, image, and a link to the project live demo or github
    const projects = [
+      {
+         title: 'Badde Salemtak',
+         description:
+            'A mobile app designed to connect Lebanese residents with travelers visiting Lebanon, enabling them to request foreign products that are not readily available in the local market.',
+         image: BaddeSalemtak,
+         technologies: ['React Native', 'ExpressJS', 'NodeJS', 'MongoDB'],
+         soonBTN: true,
+      },
       {
          title: 'House Marketplace',
          description:
@@ -83,6 +92,7 @@ const Projects = () => {
                         technologies={project.technologies}
                         demoLink={project.demoLink}
                         githubLink={project.githubLink}
+                        soonBTN={project.soonBTN}
                         key={index}
                      />
                   </AnimationOnScroll>

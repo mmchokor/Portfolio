@@ -16,6 +16,7 @@ const ProjectCard = ({
    technologies,
    demoLink,
    githubLink,
+   soonBTN,
 }) => {
    return (
       <div className='flex justify-center'>
@@ -61,6 +62,15 @@ const ProjectCard = ({
                         target='_blank'
                      >
                         Code
+                     </a>
+                  )}
+                  {soonBTN && (
+                     <a
+                        href={'#'}
+                        className='btn btn-primary md:btn-md text-xl pointer-events-none'
+                        target='_blank'
+                     >
+                        Coming Soon
                      </a>
                   )}
                </div>
