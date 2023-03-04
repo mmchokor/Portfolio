@@ -2,12 +2,12 @@
 // This component is used to display the projects tin the Home page
 
 // Images ************************************************************************************
-import BaddeSalemtak from '../assets/images/projectsImages/baddeSalemtak.png'
-import FaceAttendance from '../assets/images/projectsImages/face-attendance.jpg'
-import HouseMarketplaceImage from '../assets/images/projectsImages/hourse-marketplace.jpg'
-import PharmacyMS from '../assets/images/projectsImages/pharmacyMS.jpg'
-import PortfolioImage from '../assets/images/projectsImages/portfolio.png'
-import SupportDesk from '../assets/images/projectsImages/support-desk.jpg'
+import BaddeSalemtak from '../assets/images/projectsImages/baddeSalemtak.webp'
+import FaceAttendance from '../assets/images/projectsImages/face-attendance.webp'
+import HouseMarketplaceImage from '../assets/images/projectsImages/hourse-marketplace.webp'
+import PharmacyMS from '../assets/images/projectsImages/pharmacyMS.webp'
+import PortfolioImage from '../assets/images/projectsImages/portfolio.webp'
+import SupportDesk from '../assets/images/projectsImages/support-desk.webp'
 // Images ************************************************************************************
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import ProjectCard from '../components/shared/ProjectCard'
