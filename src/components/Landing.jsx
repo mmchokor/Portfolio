@@ -3,7 +3,7 @@
 // It has links to my github and linkedin
 // It has a button to hire me with a link to the contact page
 
-import { FaGithub, FaLinkedin, FaChevronDown } from 'react-icons/fa'
+import { FaChevronDown, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 const Landing = () => {
@@ -14,7 +14,7 @@ const Landing = () => {
                <h1 className='text-6xl text-gray-300'>Hi! I am,</h1>
                <h1 className='text-6xl text-gray-300'>Mohamed-Hammoud Chokor</h1>
                <h2 className='text-3xl mt-3 text-gray-300'>
-                  I am a Junior Software/Web Developer
+                  I am a Junior Software Engineer
                </h2>
                <div className='inline-flex gap-12 mt-12 pl-5 '>
                   <Link
