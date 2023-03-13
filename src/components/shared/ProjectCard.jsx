@@ -29,7 +29,7 @@ const ProjectCard = ({
 
             <div className='p-6 flex flex-col justify-start bg-gray-900'>
                <h5 className='text-xl font-medium mb-2 text-white'>{title}</h5>
-               <Readmore className='text-base mb-4 text-gray-400'>
+               <Readmore className='mb-4 text-gray-400'>
                   {description}
                </Readmore>
                <p className='m-3'>
