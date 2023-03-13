@@ -13,7 +13,7 @@ const Readmore = ({ children }) => {
       setIsReadMore(!isReadMore)
    }
    return (
-      <p className='text'>
+      <p className='text-gray-400'>
          {isReadMore ? text.slice(0, 200) : text}
          <span onClick={toggleReadMore} className='cursor-pointer text-gray-600'>
             {text.length > 200 ? isReadMore ? '...Read more' : ' Show less' : ''}
