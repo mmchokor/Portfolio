@@ -24,6 +24,7 @@ const Projects = () => {
                   <AnimationOnScroll
                      animateOnce={true}
                      animateIn='animate__fadeInUp'
+                     key={index}
                   >
                      <ProjectCard
                         title={project.title}
