@@ -4,7 +4,7 @@
 // The picture can grow and shrink on hover
 
 import { Link } from 'react-router-dom'
-import aboutImage from '../assets/images/aboutImage.jpg'
+import aboutImage from '../assets/images/aboutimage.webp'
 
 function About() {
    return (
