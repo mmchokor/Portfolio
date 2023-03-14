@@ -93,11 +93,11 @@ function Contact() {
          <>
             {status !== 'Success' ? (
                <div className='text-center'>
-                  <h1 className='text-5xl font-bold'>
+                  <h1 className='text-5xl font-bold text-gray-400'>
                      Sorry something went wrong!
                   </h1>
                   <br />
-                  <p className='text-2xl'>The email couldn't be sent</p>
+                  <p className='text-2xl text-gray-400'>The email couldn't be sent</p>
                   <br />
                   <p>{status}</p>
 
@@ -123,11 +123,11 @@ function Contact() {
                </div>
             ) : (
                <div className='text-center'>
-                  <h1 className='text-5xl font-bold'>
+                  <h1 className='text-5xl font-bold text-gray-400'>
                      Thank you for contacting me!
                   </h1>
                   <br />
-                  <p className='text-2xl'>
+                  <p className='text-2xl text-gray-400'>
                      I will get back to you as soon as possible.
                   </p>
                   <br />
