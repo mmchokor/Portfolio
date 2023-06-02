@@ -20,7 +20,14 @@ export const projects = [
          'MongoDB',
          'AWS S3',
       ],
-      soonBTN: true,
+      demoLink: 'https://badde-salemtak-senior-project-website.vercel.app/',
+      githubLink: [
+         'https://github.com/mmchokor/Badde-Salemtak--Senior-Project--Website',
+         'https://github.com/mmchokor/Badde-Salemtak--Senior-Project--Backend',
+         'https://github.com/mmchokor/Badde-Salemtak--Senior-Project',
+      ],
+      apkDownload:
+         'https://expo.dev/accounts/ramiskakini/projects/Badde-Salemtak/builds/417595ec-8122-40e4-85ea-91e756a3ef98',
    },
    {
       title: 'House Marketplace',

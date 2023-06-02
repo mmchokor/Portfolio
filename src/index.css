@@ -118,3 +118,7 @@ body {
       box-shadow: 20px 0 rgb(100 116 139), -20px 0 rgb(30 41 59);
    }
 }
+
+.dropdown:hover > .dropdown-content {
+	display: block;
+}

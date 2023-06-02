@@ -8,7 +8,7 @@ import { projects } from '../constants/projectsData'
 const Projects = () => {
    // Array of projects objects
    // Each object has a title, description, image, and a link to the project live demo or github
-   
+
    return (
       <section id='projects' className='scroll-mt-24 mt-10'>
          <AnimationOnScroll animateOnce={true} animateIn='animate__fadeInUp'>
@@ -17,7 +17,7 @@ const Projects = () => {
             </div>
          </AnimationOnScroll>
 
-         <div className='grid gap-10 md:grid-cols-2 sm:grid-cols-1 mx-auto'>
+         <div className='grid gap-5 md:grid-cols-2 sm:grid-cols-1 mx-auto'>
             {/* map through the array of objects projects */}
             {projects.map((project, index) => {
                return (
@@ -35,6 +35,9 @@ const Projects = () => {
                         githubLink={project.githubLink}
                         soonBTN={project.soonBTN}
                         key={index}
+                        // githubBack={project.githubBack}
+                        // githubWebsite={project.githubWebsite}
+                        apkDownload={project.apkDownload}
                      />
                   </AnimationOnScroll>
                )
