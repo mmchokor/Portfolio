@@ -7,11 +7,11 @@ import { useState } from 'react'
 const Resume = () => {
    // Link for the iframe to view my resume from my google drive
    const [resumeLink] = useState(
-      'https://drive.google.com/file/d/1Yq1dwXZZjWN6kYe8xbT5hDhxJLTzuMjL/preview'
+      'https://drive.google.com/file/d/1s-g8tq1I21zk7FzUJYnUuxser0wgXfbe/preview'
    )
    // Link to be used in the a tag to directly download my resume
    const [resumeLinkDownload] = useState(
-      'https://drive.google.com/uc?export=download&id=1Yq1dwXZZjWN6kYe8xbT5hDhxJLTzuMjL'
+      'https://drive.google.com/uc?export=download&id=1s-g8tq1I21zk7FzUJYnUuxser0wgXfbe'
    )
    const [loading, setLoading] = useState(true)
    return (

@@ -2,6 +2,7 @@
 // This component is used to display the skills in the Home page
 
 // Icons start ********************************************************************
+import { AiOutlineConsoleSql } from 'react-icons/ai'
 import {
    DiCode,
    DiCss3,
@@ -24,8 +25,10 @@ import { FaHashtag, FaLaptopCode, FaVuejs } from 'react-icons/fa'
 import { FiMonitor, FiServer } from 'react-icons/fi'
 import {
    SiCplusplus,
+   SiDotnet,
    SiExpress,
    SiKotlin,
+   SiMicrosoftazure,
    SiRedux,
    SiVisualstudiocode,
 } from 'react-icons/si'
@@ -53,38 +56,46 @@ const Skills = () => {
       {
          name: 'Back-End',
          icon: <FiServer />,
-         skills: ['NodeJS', 'Express', 'MongoDB', 'Firebase', 'PHP', 'MySQL'],
+         skills: [
+            '.NET Core',
+            'NodeJS',
+            'Express',
+            'SQL Server',
+            'MongoDB',
+            'Firebase',
+         ],
          skillsIcons: [
+            <SiDotnet />,
             <DiNodejsSmall className='scale-125' />,
             <SiExpress />,
+            <AiOutlineConsoleSql />,
             <DiMongodb />,
             <DiFirebase className='scale-125' />,
-            <DiPhp className='scale-125' />,
-            <DiMysql className='scale-125' />,
          ],
       },
       {
          name: 'Languages',
          icon: <DiCode className='scale-[200%]' />,
-         skills: ['Java', 'Python', 'C/C++', 'C#', 'Kotlin'],
+         skills: ['C#', 'Java', 'Python', 'C/C++', 'Kotlin'],
          skillsIcons: [
+            <FaHashtag />,
             <DiJava className='scale-125' />,
             <DiPython className='scale-125' />,
             <SiCplusplus />,
-            <FaHashtag />,
             <SiKotlin />,
          ],
       },
       {
          name: 'Tools',
          icon: <FaLaptopCode />,
-         skills: ['VsCode', 'Git', 'GitHub', 'Eclipse', 'Visual Studio'],
+         skills: ['Vs Code', 'Visual Studio', 'Git', 'GitHub', 'Azure', 'Eclipse'],
          skillsIcons: [
             <SiVisualstudiocode className='scale-90' />,
+            <DiVisualstudio className='scale-125' />,
             <DiGit className='scale-125' />,
             <DiGithub className='scale-125' />,
+            <SiMicrosoftazure />,
             <DiEclipse className='scale-125' />,
-            <DiVisualstudio className='scale-125' />,
          ],
       },
    ]
