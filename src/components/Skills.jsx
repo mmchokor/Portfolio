@@ -43,10 +43,9 @@ const Skills = () => {
       {
          name: 'Front-End',
          icon: <FiMonitor />,
-         skills: ['ReactJs', 'VueJs', 'HTML5', 'CSS3', 'JavaScript', 'Redux'],
+         skills: ['ReactJs', 'HTML5', 'CSS3', 'JavaScript', 'Redux'],
          skillsIcons: [
             <DiReact className='scale-125' />,
-            <FaVuejs />,
             <DiHtml5 />,
             <DiCss3 />,
             <DiJavascript />,
@@ -76,13 +75,12 @@ const Skills = () => {
       {
          name: 'Languages',
          icon: <DiCode className='scale-[200%]' />,
-         skills: ['C#', 'Java', 'Python', 'C/C++', 'Kotlin'],
+         skills: ['C#', 'Java', 'Python', 'C/C++'],
          skillsIcons: [
             <FaHashtag />,
             <DiJava className='scale-125' />,
             <DiPython className='scale-125' />,
             <SiCplusplus />,
-            <SiKotlin />,
          ],
       },
       {

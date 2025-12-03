@@ -6,9 +6,9 @@ export const experiences = [
       start: '09/2023',
       end: 'Present',
       summary:
-         'Backend engineer on digital identity solutions, focusing on .NET 8 microservices and reliable delivery.',
+         'Utilizing .NET 8 and microservices, I contribute to digital identity solutions, focusing on backend development and ensuring smooth deployment processes.',
       achievements: [
-         'Developed .NET 8 APIs for course features and reusable packages, improving dev speed and standardization across projects.',
+         'Developed .NET 8 APIs for core features and reusable packages, improving dev speed and standardization across projects.',
          'Applied microservices architecture principles to isolate functionality, reducing downtime risk and lowering hosting costs through lighter App Service deployments.',
          'Contributed to a comprehensive authentication and permission-based authorization system that supports varied user roles.',
          'Built real-time user location tracking with SignalR to map movement and trigger restricted-area alerts.',
@@ -23,11 +23,11 @@ export const experiences = [
          'Microservices',
          'Azure App Service',
          'Azure VMs',
+         'Azure Pipelines',
          'IIS',
          'Azure DevOps',
          'SignalR',
          'Outlook APIs',
-         'Dlib',
       ],
    },
    {
@@ -37,7 +37,7 @@ export const experiences = [
       start: '04/2023',
       end: '08/2024',
       summary:
-         'Full stack developer utilizing C#, ASP.NET Core, and SQL Server to deliver internal products.',
+         'Full stack developer, utilizing C# and the renowned ASP.Net Core, and Microsoft SQL Server.',
       achievements: [
          'Used Entity Framework (Code First) for backend data handling across multiple modules.',
          'Developed a timesheet system using ASP.NET MVC and jQuery for internal users (~50-100), enabling efficient entry and tracking of work hours.',
