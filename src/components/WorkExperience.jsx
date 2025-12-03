@@ -27,7 +27,7 @@ const ExperienceItem = ({ experience }) => {
             <span className='h-3 w-3 rounded-full bg-primary ring-4 ring-gray-900 shadow-lg'></span>
          </span>
 
-         <div className='rounded-2xl border border-gray-700 bg-gray-900/80 p-6 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl'>
+         <div className='rounded-2xl border border-gray-700 bg-gray-900/80 p-6 shadow-lg card-pop'>
             <div className='flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between'>
                <div className='space-y-1'>
                   <p className='text-sm font-semibold uppercase tracking-wide text-primary'>
@@ -39,7 +39,7 @@ const ExperienceItem = ({ experience }) => {
                <div className='flex flex-wrap gap-3 text-sm text-gray-400 sm:justify-end'>
                   <span className='inline-flex items-center gap-2'>
                      <FaCalendarAlt className='text-primary' />
-                     {start} – {end}
+                     {start} - {end}
                   </span>
                   {location && (
                      <span className='inline-flex items-center gap-2'>
@@ -61,7 +61,7 @@ const ExperienceItem = ({ experience }) => {
 
             {achievements.length > 3 && (
                <button
-                  className='mt-4 inline-flex items-center gap-2 text-sm btn btn-outline border-gray-700 text-gray-200 hover:border-primary hover:bg-primary/20'
+                  className='mt-4 inline-flex items-center gap-2 text-sm md:text-xs btn btn-outline border-gray-700 text-gray-200 hover:border-primary hover:bg-primary/20 md:px-3 md:py-1.5'
                   onClick={() => setExpanded((prev) => !prev)}
                >
                   {expanded ? 'Show less' : 'Show details'}

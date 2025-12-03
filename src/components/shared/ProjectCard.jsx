@@ -13,7 +13,7 @@ const ProjectCard = ({
 }) => {
    return (
       <div className='flex justify-center'>
-         <div className='flex flex-col lg:flex-row md:max-w-xl rounded-lg bg-white shadow-lg min-h-[20rem]'>
+         <div className='flex flex-col lg:flex-row md:max-w-xl rounded-lg bg-white shadow-lg min-h-[20rem] card-pop'>
             <img
                className='w-full h-80 md:h-auto md:min-h-[17rem] object-cover lg:min-w-[40%] xl:w-[70%] md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg'
                src={image}
