@@ -96,7 +96,7 @@ const WorkExperience = () => {
          <AnimationOnScroll animateOnce={true} animateIn='animate__fadeInUp'>
             <div className='mb-10 text-center text-4xl text-white font-bold bg-gray-900 border border-gray-700 py-6 rounded-lg shadow-md'>
                <h1>Work Experience</h1>
-               <p className='mt-2 text-base font-normal text-gray-400'>
+               <p className='mx-2 mt-2 text-base font-normal text-gray-400'>
                   A quick look at the products I helped build and ship.
                </p>
             </div>
