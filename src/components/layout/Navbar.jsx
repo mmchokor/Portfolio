@@ -105,6 +105,13 @@ function Navbar({ title }) {
                         {pathMatchRoute('/') && (
                            <>
                               <a
+                                 href='#experience'
+                                 className={'text-gray-300 scale-150'}
+                                 onClick={() => setIsNavOpen(false)}
+                              >
+                                 Experience
+                              </a>
+                              <a
                                  href='#skills'
                                  className={'text-gray-300 scale-150'}
                                  onClick={() => setIsNavOpen(false)}
@@ -192,6 +199,9 @@ function Navbar({ title }) {
                      </Link>
                      {pathMatchRoute('/') && (
                         <>
+                           <a href='#experience' className={standardButton}>
+                              Experience
+                           </a>
                            <a href='#skills' className={standardButton}>
                               Skills
                            </a>

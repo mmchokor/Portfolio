@@ -44,10 +44,10 @@ const Landing = () => {
          </section>
          <div className='flex flex-row justify-center items-center text-gray-300'>
          <a
-            href='#skills'
+            href='#experience'
             className='text-center absolute bottom-7 text-md'
          >
-            Skills
+            Experience
 
          </a>
          <p className='text-center absolute bottom-4 text-md'><FaChevronDown/></p>

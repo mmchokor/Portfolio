@@ -2,6 +2,7 @@
 // This component is used to display the landing, skills and Projects component
 
 import Landing from '../components/Landing'
+import WorkExperience from '../components/WorkExperience'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 
@@ -10,6 +11,9 @@ function Home() {
       <>
          {/* Landing Section */}
          <Landing />
+
+         {/* Work Experience Section */}
+         <WorkExperience />
 
          {/* Skills Section */}
          <Skills />
