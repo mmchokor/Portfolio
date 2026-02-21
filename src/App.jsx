@@ -4,6 +4,7 @@
 // It is all contained in a flexbox container
 
 import "animate.css/animate.min.css"
+import { Analytics } from '@vercel/analytics/react'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import Footer from './components/layout/Footer'
 import Navbar from './components/layout/Navbar'
@@ -30,6 +31,7 @@ function App() {
                <Footer />
             </div>
          </Router>
+         <Analytics />
       </>
    )
 }
