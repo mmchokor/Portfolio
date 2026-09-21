@@ -26,5 +26,5 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     { "@context": "https://schema.org", "@type": "Person", name: profile.name, jobTitle: profile.role, url: "https://chokor.cc", email: `mailto:${profile.email}`, address: { "@type": "PostalAddress", addressLocality: "Beirut", addressCountry: "LB" }, sameAs: [profile.github, profile.linkedin] },
     { "@context": "https://schema.org", "@type": "WebSite", name: "Mohamed Chokor Portfolio", url: "https://chokor.cc", author: { "@type": "Person", name: profile.name } },
   ];
-  return <html lang="en" className={`${sans.variable} ${mono.variable}`}><body><a className="skip-link" href="#main-content">Skip to content</a><Navigation />{children}<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} /><Analytics /></body></html>;
+  return <html lang="en" className={`${sans.variable} ${mono.variable}`} data-scroll-behavior="smooth"><body><a className="skip-link" href="#main-content">Skip to content</a><Navigation />{children}<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} /><Analytics /></body></html>;
 }
