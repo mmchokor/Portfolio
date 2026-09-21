@@ -1,26 +1,45 @@
-# Chokor.Portfolio()
+# Portfolio v2
 
-My personal portfolio website where I have listed some info about meand my projects on it.
-You can check it out at [https://mohamed-chokor.netlify.app/](https://mohamed-chokor.netlify.app/)
+The personal portfolio of Mohamed Chokor, a software engineer with a backend and .NET specialty. Version 2 is a full redesign and migration from the original Vite SPA to Next.js.
 
-# How to run
+Production: [chokor.cc](https://chokor.cc)
 
-Clone this repo using git
-```shell
-git clone https://github.com/mmchokor/Portfolio
-``` 
+## Stack
 
-After cloning the repo, instal the dependencies using:
-```shell
+- Next.js App Router and React
+- TypeScript
+- Tailwind CSS
+- Vercel Analytics
+- Next.js Metadata, sitemap, robots, structured data, and dynamic Open Graph image
+
+Most of the site is statically rendered with Server Components. Client JavaScript is limited to navigation and the contact form.
+
+## Local development
+
+Node.js 22 is required.
+
+```bash
 npm install
-``` 
-
-After the dependencies are installed run this command to start the local server
-```shell
-nom run dev
+npm run dev
 ```
 
-To build the project
-```shell
+Open `http://localhost:3000`.
+
+## Validation
+
+```bash
+npm run lint
+npm run typecheck
 npm run build
 ```
+
+## Structure
+
+- `src/app` — routes, metadata, global styles, sitemap, robots, and social image
+- `src/components` — interactive and reusable sections
+- `src/data/profile.ts` — typed career, skills, education, and project content
+- `public` — resume and optimized image assets
+
+## Deployment
+
+The project deploys through Vercel's standard Next.js detection. Keep the production domain set to `https://chokor.cc`; preview deployment URLs are not used as canonical URLs. No custom `vercel.json` or paid Vercel feature is required.
