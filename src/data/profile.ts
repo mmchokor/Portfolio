@@ -37,7 +37,7 @@ export const experiences: Experience[] = [
     groups: [{ title: "Selected work", items: [
       "Replaced Excel and manual processes with centralized workflows, including vacation submission, multi-level approval, HR visibility, and a company calendar.",
       "Enhanced project-linked timesheet rules, approval limits, payable-hours logic, and reports for employee hours, departments, projects, clients, payroll, and billing.",
-      "Helped migrate a .NET 5 MVC/Razor application toward .NET 8 REST APIs and an Angular frontend while supporting the existing Razor, jQuery, Bootstrap, JavaScript, and AJAX application."
+      "Helped migrate a .NET 5 ASP.NET Core MVC/Razor system toward .NET 8 REST APIs and an Angular frontend, using C#, Entity Framework Code First, SQL Server, jQuery, Bootstrap, JavaScript, and AJAX."
     ] }], technologies: ["C#", "ASP.NET Core", "EF Core", "SQL Server", "Angular", "Razor", "jQuery"]
   },
   {

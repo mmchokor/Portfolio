@@ -34,9 +34,9 @@ export function ResumeViewer({ downloadFile, file }: ResumeViewerProps) {
     const container = containerRef.current;
     if (!container) return;
 
-    const updateWidth = () => setContainerWidth(container.clientWidth);
-    updateWidth();
-    const observer = new ResizeObserver(updateWidth);
+    const observer = new ResizeObserver(([entry]) => {
+      setContainerWidth(Math.floor(entry.contentRect.width));
+    });
     observer.observe(container);
     return () => observer.disconnect();
   }, []);

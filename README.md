@@ -12,7 +12,7 @@ Production: [chokor.cc](https://chokor.cc)
 - Vercel Analytics
 - Next.js Metadata, sitemap, robots, structured data, and dynamic Open Graph image
 
-Most of the site is statically rendered with Server Components. Client JavaScript is limited to navigation and the contact form.
+Most of the site is statically rendered with Server Components. Client JavaScript is limited to navigation, the contact form, reveal interactions, and the React-PDF viewer isolated to `/resume`.
 
 ## Local development
 
