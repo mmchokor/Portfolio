@@ -1,7 +1,7 @@
 import { experiences } from "@/data/profile";
 export function ExperienceSection() { return <section className="section experience-section" id="experience" aria-labelledby="experience-heading">
-  <div className="section-heading"><p className="eyebrow">01 / Experience</p><h2 id="experience-heading">Engineering work,<br />in context.</h2><p>Current work leads. Earlier roles stay concise.</p></div>
-  <div className="timeline">{experiences.map((experience, index) => <article className={`experience-card ${index === 0 ? "experience-primary" : ""}`} key={experience.company}>
+  <div className="section-heading compact" data-reveal><p className="eyebrow">01 / Experience</p><h2 id="experience-heading">Work Experience</h2></div>
+  <div className="timeline">{experiences.map((experience, index) => <article className={`experience-card ${index === 0 ? "experience-primary" : ""}`} key={experience.company} data-reveal data-reveal-delay={index * 70}>
     <div className="timeline-marker" aria-hidden="true"><span>{String(index + 1).padStart(2, "0")}</span></div>
     <header className="experience-header"><div><p className="company">{experience.company}</p><h3>{experience.role}</h3></div><div className="experience-meta"><time>{experience.period}</time><span>{experience.location}</span></div></header>
     <p className="experience-summary">{experience.summary}</p><div className="default-highlights">{experience.groups[0].items.slice(0, index === 0 ? 3 : 2).map(item => <p key={item}>{item}</p>)}</div>

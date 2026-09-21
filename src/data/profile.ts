@@ -58,5 +58,5 @@ export const skills = [
   { category: "Testing & Additional", items: ["Unit testing", "API / integration testing", "Cypress", "Jest", "Python — Dlib integration", "Java fundamentals"] }
 ];
 
-export const education = { degree: "Bachelor of Science in Computer Science", school: "Beirut Arab University", year: "2023", details: ["GPA 3.7 / 4.0 · Honors", "Student Representative / Faculty of Science liaison", "Senior Project Competition: 2nd overall among ~20 teams · 1st on campus"] };
+export const education = { degree: "Bachelor of Science in Computer Science", school: "Beirut Arab University", year: "2023", details: ["GPA 3.7 / 4.0 · Honors", "Student Representative / Faculty of Science liaison"] };
 export const universityProject = { name: "Badde Salemtak", description: "A mobile application connecting Lebanese residents with travelers visiting Lebanon, allowing residents to request products that are difficult to obtain locally.", technologies: ["React Native", "Node.js", "Express.js", "MongoDB", "AWS S3"], demo: "https://badde-salemtak-senior-project-website.vercel.app/", repositories: ["https://github.com/mmchokor/Badde-Salemtak--Senior-Project--Website", "https://github.com/mmchokor/Badde-Salemtak--Senior-Project--Backend", "https://github.com/mmchokor/Badde-Salemtak--Senior-Project"] };
